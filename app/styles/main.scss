@@ -1,0 +1,37 @@
+// bower:scss
+// endbower
+html{height:100%;
+ }
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  position: relative;
+}
+
+.splitText {
+  margin: 50px auto 0 auto;
+  width: 300px;
+  height: 100%;
+  font-size: 2em;
+  text-align: center;
+  position:relative;
+  height: 100%;
+  overflow: hidden;
+}
+.textContainer{
+}
+.frontText {
+//position: absolute;
+  margin:0;
+  color : blue;
+  -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  border-right: 10px solid red;
+}
+.backText{
+  //position: absolute;
+  margin:0 0 -32.6% 0;
+  -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
